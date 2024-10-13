@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados do Município - Santo Antônio dos Lopes</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#FF1493',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-gray-100">
+    <header class="bg-primary fixed w-full top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <img src="/imagens/logo.png" alt="Prefeitura Municipal" class="h-16">
+                </div>
+                <nav class="hidden lg:flex flex-1 justify-center">
+                    <ul class="flex space-x-1">
+                        <li><a href="#" class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i class="fas fa-home w-5 mr-1"></i> Início</a></li>
+                        <li class="relative group">
+                            <a href="#" class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i class="fas fa-building w-5 mr-1"></i> A Prefeitura</a>
+                            <div class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 ease-in-out">
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Prefeito e Vice</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Secretarias</a>
+                            </div>
+                        </li>
+                        <li class="relative group">
+                            <a href="#" class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i class="fas fa-city w-5 mr-1"></i> O Município</a>
+                            <div class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 ease-in-out">
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Obras</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Veículos</a>
+                                <a href="/municipio/simbolos/simbolos.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Símbolos</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Conselhos</a>
+                                <a href="/municipio/dadosmunicipio/dados-municipio.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Dados do Município</a>
+                            </div>
+                        </li>
+                        <li class="relative group">
+                            <a href="#" class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i class="fas fa-hands-helping w-5 mr-1"></i> Serviços</a>
+                            <div class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 ease-in-out">
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Contra Cheque Online</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Diário Eletrônico</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Nota Fiscal Eletrônica</a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i class="far fa-newspaper w-5 mr-1"></i> Diário Oficial</a></li>
+                        <li class="relative group">
+                            <a href="#" class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i class="fas fa-chart-line w-5 mr-1"></i> Transparência</a>
+                            <div class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 ease-in-out">
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">LRF e Contas Publicas</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Publicações</a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i class="fas fa-info-circle w-5 mr-1"></i> E-Sic</a></li>
+                        <li><a href="/ouvidoria/ouvidoria.html" class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i class="fas fa-comments w-5 mr-1"></i> Ouvidoria</a></li>
+                        <li><a href="#" class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i class="fas fa-search w-5 mr-1"></i> Pesquisa</a></li>
+                    </ul>
+                </nav>
+                <button id="menu-toggle" class="lg:hidden text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu (hidden by default) -->
+        <div id="mobile-menu" class="lg:hidden fixed inset-y-0 right-0 w-64 bg-primary shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out">
+            <!-- (Mobile menu content remains the same) -->
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-20 mb-12">
+        <h1 class="text-4xl font-bold text-gray-800 mb-8 text-center">Dados do Município</h1>
+        
+        <section class="mb-16">
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div class="p-8">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">História</h2>
+                    <p class="text-gray-600 mb-4">Fundada em 21 de julho de 1922 por Antônio Pereira Lopes, Santo Antônio dos Lopes nasceu da coragem e determinação de desbravadores piauienses. Elevada à condição de município em 30 de dezembro de 1961, a cidade tem uma rica história de superação e desenvolvimento.</p>
+                    <p class="text-gray-600 mb-4">A origem do nome está ligada ao nome do seu fundador Antonio e ao santo do mesmo nome, seu protetor.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div class="p-8">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Geografia</h2>
+                    <p class="text-gray-600 mb-4">Área: 712 km²</p>
+                    <p class="text-gray-600 mb-4">Limites: Pedreiras e Lima Campos (norte), Dom Pedro (sul), Codó e Dom Pedro (leste), Joselândia, Presidente Dutra e Dom Pedro (oeste)</p>
+                    <p class="text-gray-600 mb-4">Tipo de solo: Massapé</p>
+                    <p class="text-gray-600 mb-4">Hidrografia: Os povoados "Pacas" e "Marianópolis" são banhados pelo Rio Mearim. Os demais são servidos por açudes, poços artesianos e igarapés temporários, sendo os mais importantes "marimbondo" e "Insono".</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div class="p-8">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Economia</h2>
+                    <p class="text-gray-600 mb-4">Inicialmente baseada na agricultura familiar de arroz, milho e feijão; na produção de cachaça e comércio de bens e serviços.</p>
+                    <p class="text-gray-600 mb-4">Atualmente, a economia ganhou novo impulso com o estabelecimento do Complexo Termelétrico Parnaíba.</p>
+                    <p class="text-gray-600 mb-4">Em 2014, Santo Antonio dos Lopes já possuía PIB de R$ 830.654,00, destacando-se como a 11ª economia do estado.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div class="p-8">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Clima</h2>
+                    <p class="text-gray-600 mb-4">Clima quente e úmido, com apenas duas estações:</p>
+                    <ul class="list-disc list-inside text-gray-600 mb-4">
+                        <li>Inverno: de dezembro a maio</li>
+                        <li>Verão: de junho a novembro</li>
+                    </ul>
+                    <p class="text-gray-600 mb-4">Temperatura varia entre 25 e 33 graus.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div class="p-8">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Demografia</h2>
+                    <p class="text-gray-600 mb-4">População em 2010: 14.288 habitantes</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white mt-16 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            <div>
+                <img src="/imagens/logo.png" alt="Prefeitura Municipal" class="h-10 mb-6">
+                <p class="flex items-center mb-2"><i class="fas fa-map-marker-alt mr-2"></i> Rua Principal, 123</p>
+                <p class="flex items-center mb-2"><i class="fas fa-phone mr-2"></i> (00) 1234-5678</p>
+                <p class="flex items-center mb-4"><i class="fas fa-envelope mr-2"></i> contato@prefeitura.gov.br</p>
+<div class="flex space-x-4">
+                    <a href="#" class="bg-primary hover:bg-primary/80 w-10 h-10 rounded-full flex items-center justify-center transition duration-300 ease-in-out"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="bg-primary hover:bg-primary/80 w-10 h-10 rounded-full flex items-center justify-center transition duration-300 ease-in-out"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="bg-primary hover:bg-primary/80 w-10 h-10 rounded-full flex items-center justify-center transition duration-300 ease-in-out"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-6 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-12 after:h-1 after:bg-primary">Links Úteis</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-primary transition duration-300 ease-in-out">Portal da Transparência</a></li>
+                    <li><a href="#" class="hover:text-primary transition duration-300 ease-in-out">Diário Oficial</a></li>
+                    <li><a href="#" class="hover:text-primary transition duration-300 ease-in-out">Licitações</a></li>
+                    <li><a href="#" class="hover:text-primary transition duration-300 ease-in-out">Concursos</a></li>
+                    <li><a href="#" class="hover:text-primary transition duration-300 ease-in-out">Ouvidoria</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-6 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-12 after:h-1 after:bg-primary">Horário de Atendimento</h3>
+                <p class="mb-2">Segunda a Sexta</p>
+                <p class="mb-2">08:00 às 17:00</p>
+                <p class="mb-4">Exceto feriados</p>
+                <a href="#" class="inline-block bg-primary text-white px-6 py-3 rounded-lg transition duration-300 ease-in-out hover:bg-primary/80">Fale Conosco</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

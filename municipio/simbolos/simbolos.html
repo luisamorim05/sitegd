@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Símbolos Municipais - Santo Antônio dos Lopes</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#FF1493',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-gray-100">
+    <header class="bg-primary fixed w-full top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <img src="/imagens/logo.png" alt="Prefeitura Municipal" class="h-16">
+                </div>
+                <nav class="hidden lg:flex flex-1 justify-center">
+                    <ul class="flex space-x-1">
+                        <li><a href="/home/page.html" class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i class="fas fa-home w-5 mr-1"></i> Início</a></li>
+                        <li class="relative group">
+                            <a href="#" class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i class="fas fa-building w-5 mr-1"></i> A Prefeitura</a>
+                            <div class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 ease-in-out">
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Prefeito e Vice</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Secretarias</a>
+                            </div>
+                        </li>
+                        <li class="relative group">
+                            <a href="#" class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i class="fas fa-city w-5 mr-1"></i> O Município</a>
+                            <div class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 ease-in-out">
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Obras</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Veículos</a>
+                                <a href="/municipio/simbolos/simbolos.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Símbolos</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Conselhos</a>
+                                <a href="/municipio/dadosmunicipio/dados-municipio.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Dados do Município</a>
+                            </div>
+                        </li>
+                        <li class="relative group">
+                            <a href="#" class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i class="fas fa-hands-helping w-5 mr-1"></i> Serviços</a>
+                            <div class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 ease-in-out">
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Contra Cheque Online</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Diário Eletrônico</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Nota Fiscal Eletrônica</a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i class="far fa-newspaper w-5 mr-1"></i> Diário Oficial</a></li>
+                        <li class="relative group">
+                            <a href="#" class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i class="fas fa-chart-line w-5 mr-1"></i> Transparência</a>
+                            <div class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 ease-in-out">
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">LRF e Contas Publicas</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Publicações</a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i class="fas fa-info-circle w-5 mr-1"></i> E-Sic</a></li>
+                        <li><a href="/ouvidoria/ouvidoria.html" class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i class="fas fa-comments w-5 mr-1"></i> Ouvidoria</a></li>
+                        <li><a href="#" class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i class="fas fa-search w-5 mr-1"></i> Pesquisa</a></li>
+                    </ul>
+                </nav>
+                <button id="menu-toggle" class="lg:hidden text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu (hidden by default) -->
+        <div id="mobile-menu" class="lg:hidden fixed inset-y-0 right-0 w-64 bg-primary shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out">
+            <!-- (Mobile menu content remains the same) -->
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-20 mb-12">
+        <h1 class="text-4xl font-bold text-gray-800 mb-8 text-center">Símbolos Municipais</h1>
+        
+        <section class="mb-16">
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div class="p-8">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Hino de Santo Antônio dos Lopes</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <p class="text-gray-600 mb-4 italic">
+                                Santo Antônio, terra querida<br>
+                                Terra de amor, terra de paz<br>
+                                A tua glória, te engrandece<br>
+                                Nas sombras dos teus cocais<br><br>
+
+                                Nós te amamos terra querida<br>
+                                Com toda dedicação<br>
+                                Tuas palmeiras te representam<br>
+                                Nos torrões do Maranhão<br><br>
+
+                                O Maranhão te contempla<br>
+                                Com força e esplendor<br>
+                                Pela paz do nosso povo<br>
+                                E do homem lavrador<br><br>
+
+                                Santo Antônio, terra querida<br>
+                                Terra de amor, terra de paz<br>
+                                A tua glória te engrandece<br>
+                                Nas sombras dos teus cocais
+                            </p>
+                        </div>
+                        <div>
+                            <p class="text-gray-600 mb-4 italic">
+                                Salve! Salve! Santo Antônio<br>
+                                Terra de amor, terra de paz<br>
+                                Os teus filhos te reconhecem<br>
+                                Na terra dos palmeirais<br><br>
+
+                                Belos raios cristalinos<br>
+                                Que deslumbram o Mearim<br>
+                                Lindos cerrados acompanham<br>
+                                No gorjeio dos passarinhos<br><br>
+
+                                Santo Antônio, terra querida<br>
+                                Terra de amor, terra de paz<br>
+                                A tua Glória te engrandece<br>
+                                Nas sombras dos teus cocais<br><br>
+
+                                Salve! Salve! Santo Antônio<br>
+                                Terra de grande produção<br>
+                                Os teus filhos te exaltam<br>
+                                Pelo arroz, milho e feijão.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div class="p-8">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Brasão Municipal</h2>
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 mb-4 md:mb-0 md:mr-8">
+                            <img src="/imagens/brasao.jpeg" alt="Brasão de Santo Antônio dos Lopes" class="mx-auto rounded-lg shadow-lg">
+                        </div>
+                        <div class="md:w-1/2">
+                            <p class="text-gray-600 mb-4">O brasão de Santo Antônio dos Lopes representa a história, cultura e valores do município. Cada elemento simboliza aspectos importantes da cidade e sua comunidade.</p>
+                            <p class="text-gray-600">A descrição detalhada do brasão e seu significado serão adicionados aqui.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div class="p-8">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Bandeira Municipal</h2>
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 mb-4 md:mb-0 md:mr-8">
+                            <img src="/imagens/bandeira.jpeg" alt="Bandeira de Santo Antônio dos Lopes" class="mx-auto rounded-lg shadow-lg">
+                        </div>
+                        <div class="md:w-1/2">
+                            <p class="text-gray-600 mb-4">A bandeira de Santo Antônio dos Lopes é um símbolo de orgulho e identidade para todos os cidadãos. Suas cores e design refletem a essência do município.</p>
+                            <p class="text-gray-600">A descrição detalhada da bandeira, incluindo suas cores, formas e significado, será adicionada aqui.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white mt-16 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            <div>
+                <img src="/imagens/logo.png" alt="Prefeitura Municipal" class="h-10 mb-6">
+                <p class="flex items-center mb-2"><i class="fas fa-map-marker-alt mr-2"></i> Rua Principal, 123</p>
+                <p class="flex items-center mb-2"><i class="fas fa-phone mr-2"></i> (00) 1234-5678</p>
+                <p class="flex items-center mb-4"><i class="fas fa-envelope mr-2"></i> contato@prefeitura.gov.br</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="bg-primary hover:bg-primary/80 w-10 h-10 rounded-full flex items-center justify-center transition duration-300 ease-in-out"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="bg-primary hover:bg-primary/80 w-10 h-10 rounded-full flex items-center justify-center transition duration-300 ease-in-out"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="bg-primary hover:bg-primary/80 w-10 h-10 rounded-full flex items-center justify-center transition duration-300 ease-in-out"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-6 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-12 after:h-1 after:bg-primary">Links Úteis</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-primary transition duration-300 ease-in-out">Portal da Transparência</a></li>
+                    <li><a href="#" class="hover:text-primary transition duration-300 ease-in-out">Diário Oficial</a></li>
+                    <li><a href="#" class="hover:text-primary transition duration-300 ease-in-out">Licitações</a></li>
+                    <li><a href="#" class="hover:text-primary transition duration-300 ease-in-out">Concursos</a></li>
+                    <li><a href="#" class="hover:text-primary transition duration-300 ease-in-out">Ouvidoria</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-6 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-12 after:h-1 after:bg-primary">Horário de Atendimento</h3>
+                <p class="mb-2">Segunda a Sexta</p>
+                <p class="mb-2">08:00 às 17:00</p>
+                <p class="mb-4">Exceto feriados</p>
+                <a href="#" class="inline-block bg-primary text-white px-6 py-3 rounded-lg transition duration-300 ease-in-out hover:bg-primary/80">Fale Conosco</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

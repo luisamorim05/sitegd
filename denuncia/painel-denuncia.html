@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Denúncia | Prefeitura Municipal de Santo Antônio dos Lopes</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#FF1493',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .menu-open {
+            overflow: hidden;
+        }
+
+        .menu-open .mobile-menu {
+            transform: translateX(0);
+        }
+
+        /* Forçar o footer a ficar na parte inferior */
+        body,
+        html {
+            height: 100%;
+        }
+
+        .min-h-screen-with-footer {
+            min-height: calc(100vh - 4rem);
+            /* Ajuste conforme a altura do footer */
+        }
+    </style>
+</head>
+
+<body class="font-sans bg-gray-100">
+    <header class="bg-primary fixed w-full top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <img src="../imagens/logo-sal.png" alt="Prefeitura Municipal" class="h-14">
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-4">
+                        <li><a href="../home/home.html"
+                                class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center"><i
+                                    class="fas fa-home mr-2"></i> Início</a></li>
+                        <li class="relative group">
+                            <a href="#"
+                                class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center"><i
+                                    class="fas fa-building mr-2"></i> A Prefeitura</a>
+                            <div
+                                class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 ease-in-out">
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Prefeito
+                                    e Vice</a>
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Secretarias</a>
+                            </div>
+                        </li>
+                        <li class="relative group">
+                            <a href="#"
+                                class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center"><i
+                                    class="fas fa-city mr-2"></i> O Município</a>
+                            <div
+                                class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 ease-in-out">
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Obras</a>
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Veículos</a>
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Símbolos</a>
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Conselhos</a>
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Dados
+                                    do Município</a>
+                            </div>
+                        </li>
+                        <li><a href="#"
+                                class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center"><i
+                                    class="fas fa-chart-line mr-2"></i> Transparência</a></li>
+                        <li><a href="#"
+                                class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center"><i
+                                    class="fas fa-newspaper mr-2"></i> Publicações</a></li>
+                        <li><a href="#"
+                                class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center"><i
+                                    class="fas fa-hands-helping mr-2"></i> Serviços</a></li>
+                    </ul>
+                </nav>
+                <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Menu móvel -->
+        <div id="mobile-menu"
+            class="md:hidden fixed inset-y-0 right-0 w-64 bg-primary shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out">
+            <div class="p-6">
+                <button id="close-menu" class="text-white focus:outline-none mb-4">
+                    <i class="fas fa-times text-2xl"></i>
+                </button>
+                <ul class="space-y-4">
+                    <li><a href="#"
+                            class="text-white hover:bg-white/20 block px-3 py-2 rounded-md text-base font-medium"><i
+                                class="fas fa-home mr-2"></i> Início</a></li>
+                    <li>
+                        <a href="#"
+                            class="text-white hover:bg-white/20 block px-3 py-2 rounded-md text-base font-medium"><i
+                                class="fas fa-building mr-2"></i> A Prefeitura</a>
+                        <ul class="ml-4 mt-2 space-y-2">
+                            <li><a href="#"
+                                    class="text-white hover:bg-white/20 block px-3 py-2 rounded-md text-sm">Prefeito e
+                                    Vice</a></li>
+                            <li><a href="#"
+                                    class="text-white hover:bg-white/20 block px-3 py-2 rounded-md text-sm">Secretarias</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-white hover:bg-white/20 block px-3 py-2 rounded-md text-base font-medium"><i
+                                class="fas fa-city mr-2"></i> O Município</a>
+                        <ul class="ml-4 mt-2 space-y-2">
+                            <li><a href="#"
+                                    class="text-white hover:bg-white/20 block px-3 py-2 rounded-md text-sm">Obras</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-white hover:bg-white/20 block px-3 py-2 rounded-md text-sm">Veículos</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-white hover:bg-white/20 block px-3 py-2 rounded-md text-sm">Símbolos</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-white hover:bg-white/20 block px-3 py-2 rounded-md text-sm">Conselhos</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-white hover:bg-white/20 block px-3 py-2 rounded-md text-sm">Dados do
+                                    Município</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"
+                            class="text-white hover:bg-white/20 block px-3 py-2 rounded-md text-base font-medium"><i
+                                class="fas fa-chart-line mr-2"></i> Transparência</a></li>
+                    <li><a href="#"
+                            class="text-white hover:bg-white/20 block px-3 py-2 rounded-md text-base font-medium"><i
+                                class="fas fa-newspaper mr-2"></i> Publicações</a></li>
+                    <li><a href="#"
+                            class="text-white hover:bg-white/20 block px-3 py-2 rounded-md text-base font-medium"><i
+                                class="fas fa-hands-helping mr-2"></i> Serviços</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const closeMenu = document.getElementById('close-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const body = document.body;
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('translate-x-0');
+            body.classList.toggle('menu-open');
+        });
+
+        closeMenu.addEventListener('click', () => {
+            mobileMenu.classList.remove('translate-x-0');
+            body.classList.remove('menu-open');
+        });
+    </script>
+
+
+    <body class="bg-pink-200">
+        <div class="container mx-auto px-4 py-12">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="bg-pink-600 p-4">
+                    <h2 class="text-2xl font-bold text-white text-center">Painel de Denúncia</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                        <!-- Item 1: Remoção de Entulhos -->
+                        <a href="https://main--denunciaappsal.netlify.app" target="_blank"
+                            class="flex flex-col items-center p-4 bg-pink-200 rounded-lg transition-transform transform hover:scale-105"
+                            onclick="alert('Você clicou em Remoção de Entulhos!')">
+                            <i class="fas fa-trash-alt text-pink-700 text-4xl mb-2"></i>
+                            <h3 class="text-pink-800 font-semibold text-center">Remoção de entulhos</h3>
+                        </a>
+
+                        <!-- Item 2: Iluminação Pública -->
+                        <a href="https://main--denunciaappsal.netlify.app" target="_blank"
+                            class="flex flex-col items-center p-4 bg-pink-200 rounded-lg transition-transform transform hover:scale-105"
+                            onclick="alert('Você clicou em Iluminação Pública!')">
+                            <i class="fas fa-lightbulb text-pink-700 text-4xl mb-2"></i>
+                            <h3 class="text-pink-800 font-semibold text-center">Iluminação pública</h3>
+                        </a>
+
+                        <!-- Item 3: Falta d'Água -->
+                        <a href="https://main--denunciaappsal.netlify.app" target="_blank"
+                            class="flex flex-col items-center p-4 bg-pink-200 rounded-lg transition-transform transform hover:scale-105"
+                            onclick="alert('Você clicou em Falta d\'Água!')">
+                            <i class="fas fa-tint text-pink-700 text-4xl mb-2"></i>
+                            <h3 class="text-pink-800 font-semibold text-center">Falta d'água</h3>
+                        </a>
+
+                        <!-- Item 4: Reparo de Buracos -->
+                        <a href="https://main--denunciaappsal.netlify.app" target="_blank"
+                            class="flex flex-col items-center p-4 bg-pink-200 rounded-lg transition-transform transform hover:scale-105"
+                            onclick="alert('Você clicou em Reparo de Buracos!')">
+                            <i class="fas fa-road text-pink-700 text-4xl mb-2"></i>
+                            <h3 class="text-pink-800 font-semibold text-center">Reparo de buracos</h3>
+                        </a>
+
+                        <!-- Item 5: Limpeza de Rua -->
+                        <a href="https://main--denunciaappsal.netlify.app" target="_blank"
+                            class="flex flex-col items-center p-4 bg-pink-200 rounded-lg transition-transform transform hover:scale-105"
+                            onclick="alert('Você clicou em Limpeza de Rua!')">
+                            <i class="fas fa-broom text-pink-700 text-4xl mb-2"></i>
+                            <h3 class="text-pink-800 font-semibold text-center">Limpeza de rua</h3>
+                        </a>
+
+                        <!-- Item 6: Sinais de Trânsito com Defeito -->
+                        <a href="https://main--denunciaappsal.netlify.app" target="_blank"
+                            class="flex flex-col items-center p-4 bg-pink-200 rounded-lg transition-transform transform hover:scale-105"
+                            onclick="alert('Você clicou em Sinais de Trânsito com Defeito!')">
+                            <i class="fas fa-traffic-light text-pink-700 text-4xl mb-2"></i>
+                            <h3 class="text-pink-800 font-semibold text-center">Sinais de trânsito com defeito</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-pink-600 p-4 text-center">
+                    <a href="https://main--denunciaappsal.netlify.app" target="_blank"
+                        class="text-white font-bold hover:underline">Clique aqui para fazer sua Denúncia</a>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-gray-800 text-white mt-16 py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <div>
+                    <img src="../imagens/logo-sal.png" alt="Prefeitura Municipal" class="h-14 mb-6">
+                    <p class="flex items-center mb-2"><i class="fas fa-map-marker-alt mr-2"></i> Rua Principal, 123</p>
+                    <p class="flex items-center mb-2"><i class="fas fa-phone mr-2"></i> (00) 1234-5678</p>
+                    <p class="flex items-center mb-4"><i class="fas fa-envelope mr-2"></i> contato@prefeitura.gov.br</p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="bg-primary hover:bg-primary/80 w-10 h-10 rounded-full flex items-center justify-center transition duration-300 ease-in-out"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#"
+                            class="bg-primary hover:bg-primary/80 w-10 h-10 rounded-full flex items-center justify-center transition duration-300 ease-in-out"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#"
+                            class="bg-primary hover:bg-primary/80 w-10 h-10 rounded-full flex items-center justify-center transition duration-300 ease-in-out"><i
+                                class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3
+                        class="text-xl font-bold mb-6 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-12 after:h-1 after:bg-primary">
+                        Links Úteis</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-primary transition duration-300 ease-in-out">Portal da
+                                Transparência</a></li>
+                        <li><a href="#" class="hover:text-primary transition duration-300 ease-in-out">Diário
+                                Oficial</a>
+                        </li>
+                        <li><a href="#" class="hover:text-primary transition duration-300 ease-in-out">Licitações</a>
+                        </li>
+                        <li><a href="#" class="hover:text-primary transition duration-300 ease-in-out">Concursos</a>
+                        </li>
+                        <li><a href="../ouvidoria/ouvidoria.html"
+                                class="hover:text-primary transition duration-300 ease-in-out">Ouvidoria</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3
+                        class="text-xl font-bold mb-6 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-12 after:h-1 after:bg-primary">
+                        Horário de Atendimento</h3>
+                    <p class="mb-2">Segunda a Sexta</p>
+                    <p class="mb-2">08:00 às 17:00</p>
+                    <p class="mb-4">Exceto feriados</p>
+                    <a href="#"
+                        class="inline-block bg-primary text-white px-6 py-3 rounded-lg transition duration-300 ease-in-out hover:bg-primary/80">Fale
+                        Conosco</a>
+                </div>
+            </div>
+        </footer>
+    </body>

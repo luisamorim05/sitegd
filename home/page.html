@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prefeitura de Municipal Santo Antônio dos Lopes</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#FF1493',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+         .menu-open {
+            overflow: hidden;
+        }
+        .menu-open .mobile-menu {
+            transform: translateX(0);
+        }
+    </style>
+</head>
+
+<body class="font-sans bg-gray-100">
+    <header class="bg-primary fixed w-full top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <img src="/imagens/logo.png" alt="Prefeitura Municipal" class="h-16">
+                </div>
+                <nav class="hidden lg:flex flex-1 justify-center">
+                    <ul class="flex space-x-1">
+                        <li><a href="#" class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i class="fas fa-home w-5 mr-1"></i> Início</a></li>
+                        <li class="relative group">
+                            <a href="#" class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i class="fas fa-building w-5 mr-1"></i> A Prefeitura</a>
+                            <div class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 ease-in-out">
+                                <a href="/prefeitura/prefeito/prefeito.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Prefeito e Vice</a>
+                                <a href="/prefeitura/secretarias/secretarias.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Secretarias</a>
+                            </div>
+                        </li>
+                        <li class="relative group">
+                            <a href="#" class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i class="fas fa-city w-5 mr-1"></i> O Município</a>
+                            <div class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 ease-in-out">
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Obras</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Veículos</a>
+                                <a href="/municipio/simbolos/simbolos.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Símbolos</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Conselhos</a>
+                                <a href="/municipio/dadosmunicipio/dados-municipio.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Dados do Município</a>
+                            </div>
+                        </li>
+                        <li class="relative group">
+                            <a href="#" class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i class="fas fa-hands-helping w-5 mr-1"></i> Serviços</a>
+                            <div class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 ease-in-out">
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Contra Cheque Online</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Diário Eletrônico</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Nota Fiscal Eletrônica</a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i class="far fa-newspaper w-5 mr-1"></i> Diário Oficial</a></li>
+                        <li class="relative group">
+                            <a href="#" class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i class="fas fa-chart-line w-5 mr-1"></i> Transparência</a>
+                            <div class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 ease-in-out">
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">LRF e Contas Publicas</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Publicações</a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i class="fas fa-info-circle w-5 mr-1"></i> E-Sic</a></li>
+                        <li><a href="/ouvidoria/ouvidoria.html" class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i class="fas fa-comments w-5 mr-1"></i> Ouvidoria</a></li>
+                        <li><a href="#" class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i class="fas fa-search w-5 mr-1"></i> Pesquisa</a></li>
+                    </ul>
+                </nav>
+                <button id="menu-toggle" class="lg:hidden text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        
+<div id="mobile-menu" class="lg:hidden fixed inset-y-0 right-0 w-64 bg-primary shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto">
+    <div class="p-4">
+        <button id="close-menu" class="text-white focus:outline-none mb-4">
+            <i class="fas fa-times text-2xl"></i>
+        </button>
+        <ul class="space-y-2">
+            <li><a href="#" class="text-white block py-2"><i class="fas fa-home w-5 mr-1"></i> Início</a></li>
+            <li>
+                <button class="text-white block py-2 w-full text-left flex items-center justify-between" onclick="toggleSubmenu(this)">
+                    <span><i class="fas fa-building w-5 mr-1"></i> A Prefeitura</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <ul class="pl-4 hidden">
+                    <li><a href="/prefeitura/prefeito/prefeito.html" class="text-white block py-2">Prefeito e Vice</a></li>
+                    <li><a href="/prefeitura/secretarias/secretarias.html" class="text-white block py-2">Secretarias</a></li>
+                </ul>
+            </li>
+            <li>
+                <button class="text-white block py-2 w-full text-left flex items-center justify-between" onclick="toggleSubmenu(this)">
+                    <span><i class="fas fa-city w-5 mr-1"></i> O Município</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <ul class="pl-4 hidden">
+                    <li><a href="#" class="text-white block py-2">Obras</a></li>
+                    <li><a href="#" class="text-white block py-2">Veículos</a></li>
+                    <li><a href="/municipio/simbolos/simbolos.html" class="text-white block py-2">Símbolos</a></li>
+                    <li><a href="#" class="text-white block py-2">Conselhos</a></li>
+                    <li><a href="/municipio/dadosmunicipio/dados-municipio.html" class="text-white block py-2">Dados do Município</a></li>
+                </ul>
+            </li>
+            <li>
+                <button class="text-white block py-2 w-full text-left flex items-center justify-between" onclick="toggleSubmenu(this)">
+                    <span><i class="fas fa-hands-helping w-5 mr-1"></i> Serviços</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <ul class="pl-4 hidden">
+                    <li><a href="#" class="text-white block py-2">Contra Cheque Online</a></li>
+                    <li><a href="#" class="text-white block py-2">Diário Eletrônico</a></li>
+                    <li><a href="#" class="text-white block py-2">Nota Fiscal Eletrônica</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="text-white block py-2"><i class="far fa-newspaper w-5 mr-1"></i> Diário Oficial</a></li>
+            <li>
+                <button class="text-white block py-2 w-full text-left flex items-center justify-between" onclick="toggleSubmenu(this)">
+                    <span><i class="fas fa-chart-line w-5 mr-1"></i> Transparência</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <ul class="pl-4 hidden">
+                    <li><a href="#" class="text-white block py-2">LRF e Contas Publicas</a></li>
+                    <li><a href="#" class="text-white block py-2">Publicações</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="text-white block py-2"><i class="fas fa-info-circle w-5 mr-1"></i> E-Sic</a></li>
+            <li><a href="/ouvidoria/ouvidoria.html" class="text-white block py-2"><i class="fas fa-comments w-5 mr-1"></i> Ouvidoria</a></li>
+            <li><a href="#" class="text-white block py-2"><i class="fas fa-search w-5 mr-1"></i> Pesquisa</a></li>
+        </ul>
+    </div>
+</div>
+    </header>
+    
+    <style>
+    @media (max-width: 1023px) {
+        .mobile-menu-open {
+            overflow: hidden;
+        }
+    
+        .mobile-menu-open #mobile-menu {
+            transform: translateX(0);
+        }
+    }
+    </style>
+    
+    <script>
+    function toggleSubmenu(button) {
+        const submenu = button.nextElementSibling;
+        submenu.classList.toggle('hidden');
+        const icon = button.querySelector('.fas.fa-chevron-down');
+        icon.classList.toggle('fa-chevron-up');
+    }
+    
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const menuToggle = document.getElementById('menu-toggle');
+        const closeMenu = document.getElementById('close-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+    
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('translate-x-full');
+            document.body.classList.toggle('mobile-menu-open');
+        });
+    
+        closeMenu.addEventListener('click', () => {
+            mobileMenu.classList.add('translate-x-full');
+            document.body.classList.remove('mobile-menu-open');
+        });
+    });
+    </script>
+
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-20 mb-12">
+    <!-- Painel de Noticias -->
+    <div class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-lg shadow-lg" id="news-panel">
+        <div class="relative h-96" id="news-container"></div>
+        <button id="prev-btn"
+            class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white bg-opacity-50 p-2 rounded-full hover:bg-opacity-75 transition-colors">
+            <i data-lucide="chevron-left" class="w-6 h-6 text-gray-800"></i>
+        </button>
+        <button id="next-btn"
+            class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white bg-opacity-50 p-2 rounded-full hover:bg-opacity-75 transition-colors">
+            <i data-lucide="chevron-right" class="w-6 h-6 text-gray-800"></i>
+        </button>
+    </div>
+
+    <script>
+        const newsItems = [
+            {
+                id: 1,
+                image: 'logo.png800/400',
+                date: '03 // ago',
+                title: 'Grande convenção de Cibele Napoleão e Maria Lia em Santo Antônio dos Lopes-Ma.',
+                link: '#'
+            },
+            {
+                id: 2,
+                image: '/api/placeholder/800/400',
+                date: '30 // jul',
+                title: 'Venha conhecer nossa querida cidade.',
+                link: '#'
+            },
+            {
+                id: 3,
+                image: '/api/placeholder/800/400',
+                date: '17 // ago',
+                title: 'Santo Antônio dos Lopes, quando visto de cima, revela uma paisagem encantadora que une a simplicidade do interior com a beleza natural de uma cidade tranquila.',
+                link: '#'
+            },
+            {
+                id: 4,
+                image: '/api/placeholder/800/400',
+                date: '18 // jul',
+                title: 'Grande riqueza de nossa cidade. Complexo parnaiba.',
+                link: '#'
+            }
+        ];
+
+        let currentIndex = 0;
+        const newsContainer = document.getElementById('news-container');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+
+        function renderNews() {
+            newsContainer.innerHTML = '';
+            newsItems.forEach((item, index) => {
+                const newsItem = document.createElement('div');
+                newsItem.className = `absolute inset-0 transition-opacity duration-500 ${index === currentIndex ? 'opacity-100' : 'opacity-0'
+                    }`;
+                newsItem.style.backgroundImage = `url(${item.image})`;
+                newsItem.style.backgroundSize = 'cover';
+                newsItem.style.backgroundPosition = 'center';
+
+                newsItem.innerHTML = `
+                    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                        <span class="inline-block px-2 py-1 mb-2 text-xs font-semibold bg-blue-500 rounded">
+                            ${item.date}
+                        </span>
+                        <h3 class="text-2xl font-bold">
+                            <a href="${item.link}" class="hover:underline">
+                                ${item.title}
+                            </a>
+                        </h3>
+                    </div>
+                `;
+
+                newsContainer.appendChild(newsItem);
+            });
+        }
+
+        function showPrevNews() {
+            currentIndex = (currentIndex - 1 + newsItems.length) % newsItems.length;
+            renderNews();
+        }
+
+        function showNextNews() {
+            currentIndex = (currentIndex + 1) % newsItems.length;
+            renderNews();
+        }
+
+        prevBtn.addEventListener('click', showPrevNews);
+        nextBtn.addEventListener('click', showNextNews);
+
+        renderNews();
+
+        setInterval(showNextNews, 3000);
+
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+
+    <!-- Seção Painel de denúncia -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+        <div class="bg-white rounded-lg p-4" style="box-shadow: 0 4px 6px rgba(14, 0, 0, 0.2);">
+            <h2 class="text-xl font-semibold text-black mb-2">Painel de Denúncia</h2>
+            <p class="text-sm mb-3">Ajude-nos a identificar os problemas na cidade! O Painel de Denúncia está
+                disponível para você relatar questões como falta de iluminação e outras necessidades. Sua
+                contribuição é essencial</p>
+            <a href="/denuncia/painel-denuncia.html"
+                class="bg-pink-600 text-white px-3 py-1.5 text-sm rounded hover:bg-pink-700">Painel de Denúncia</a>
+        </div>
+        <div class="bg-pink-100 rounded-lg p-4" style="box-shadow: 0 4px 6px rgba(14, 0, 0, 0.2);">
+            <h2 class="text-xl font-semibold text-black-700 mb-2">Transparência</h2>
+            <p class="text-sm mb-3">Acesse os dados e informações sobre a gestão municipal.</p>
+            <a href="#" class="bg-pink-600 text-white px-3 py-1.5 text-sm rounded hover:bg-pink-700">Portal da
+                Transparência</a>
+        </div>
+    </section>
+
+    <!-- Seção de Notícias e Serviços -->
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div
+            class="bg-white rounded-2xl shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:-translate-y-2">
+            <img src="../" alt="Notícias" class="w-full h-64 object-cover">
+            <div class="p-6">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Últimas Notícias</h2>
+                <p class="text-gray-600 mb-6">Fique por dentro das últimas atualizações e acontecimentos importantes
+                    da nossa cidade. Informação é cidadania!</p>
+                <a href="#"
+                    class="inline-block bg-pink-500 text-white px-6 py-3 rounded-lg transition duration-300 ease-in-out hover:bg-pink-400">Ler
+                    mais</a>
+            </div>
+        </div>
+        <div
+            class="bg-white rounded-2xl shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:-translate-y-2">
+            <img src="/api/placeholder/400/250" alt="Serviços" class="w-full h-64 object-cover">
+            <div class="p-6">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Serviços Online</h2>
+                <p class="text-gray-600 mb-6">Acesse nossos serviços digitais de forma rápida e prática. Disponível
+                    24 horas para facilitar sua vida.</p>
+                <a href="#"
+                    class="inline-block bg-pink-500 text-white px-6 py-3 rounded-lg transition duration-300 ease-in-out hover:bg-pink-400">Acessar
+                    serviços</a>
+            </div>
+        </div>
+        <div
+            class="bg-white rounded-2xl shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:-translate-y-2">
+            <img src="/api/placeholder/400/250" alt="Eventos" class="w-full h-64 object-cover">
+            <div class="p-6">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Agenda de Eventos</h2>
+                <p class="text-gray-600 mb-6">Participe dos eventos e atividades culturais do município. Confira
+                    nossa programação completa!</p>
+                <a href="#"
+                    class="inline-block bg-pink-500 text-white px-6 py-3 rounded-lg transition duration-300 ease-in-out hover:bg-pink-400">Ver
+                    agenda</a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="bg-gray-800 text-white mt-16 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <div>
+            <img src="../imagens/logo-sal.png" alt="Prefeitura Municipal" class="h-14 mb-6">
+            <p class="flex items-center mb-2"><i class="fas fa-map-marker-alt mr-2"></i> Rua Principal, 123</p>
+            <p class="flex items-center mb-2"><i class="fas fa-phone mr-2"></i> (00) 1234-5678</p>
+            <p class="flex items-center mb-4"><i class="fas fa-envelope mr-2"></i> contato@prefeitura.gov.br</p>
+            <div class="flex space-x-4">
+                <a href="#"
+                    class="bg-primary hover:bg-primary/80 w-10 h-10 rounded-full flex items-center justify-center transition duration-300 ease-in-out"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="#"
+                    class="bg-primary hover:bg-primary/80 w-10 h-10 rounded-full flex items-center justify-center transition duration-300 ease-in-out"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="#"
+                    class="bg-primary hover:bg-primary/80 w-10 h-10 rounded-full flex items-center justify-center transition duration-300 ease-in-out"><i
+                        class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div>
+            <h3
+                class="text-xl font-bold mb-6 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-12 after:h-1 after:bg-primary">
+                Links Úteis</h3>
+            <ul class="space-y-2">
+                <li><a href="#" class="hover:text-primary transition duration-300 ease-in-out">Portal da
+                        Transparência</a></li>
+                <li><a href="#" class="hover:text-primary transition duration-300 ease-in-out">Diário Oficial</a>
+                </li>
+                <li><a href="#" class="hover:text-primary transition duration-300 ease-in-out">Licitações</a></li>
+                <li><a href="#" class="hover:text-primary transition duration-300 ease-in-out">Concursos</a></li>
+                <li><a href="../ouvidoria/ouvidoria.html"
+                        class="hover:text-primary transition duration-300 ease-in-out">Ouvidoria</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3
+                class="text-xl font-bold mb-6 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-12 after:h-1 after:bg-primary">
+                Horário de Atendimento</h3>
+            <p class="mb-2">Segunda a Sexta</p>
+            <p class="mb-2">08:00 às 17:00</p>
+            <p class="mb-4">Exceto feriados</p>
+            <a href="#"
+                class="inline-block bg-primary text-white px-6 py-3 rounded-lg transition duration-300 ease-in-out hover:bg-primary/80">Fale
+                Conosco</a>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>

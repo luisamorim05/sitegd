@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prefeitura Municipal</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="/site-da-prefeitura-de-santo-ant-nio-dos-lopes/dist/output.css" rel="stylesheet">
+</head>
+<body class="font-sans bg-gray-100">
+    <header class="bg-primary fixed w-full top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <img src="/imagens/logo.png" alt="Prefeitura Municipal" class="h-16">
+                </div>
+                <nav class="hidden lg:flex flex-1 justify-center">
+                    <ul class="flex space-x-1">
+                        <li><a href="#" class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i class="fas fa-home w-5 mr-1"></i> Início</a></li>
+                        <li class="relative group">
+                            <a href="#" class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i class="fas fa-building w-5 mr-1"></i> A Prefeitura</a>
+                            <div class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 ease-in-out">
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Prefeito e Vice</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Secretarias</a>
+                            </div>
+                        </li>
+                        <li class="relative group">
+                            <a href="#" class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i class="fas fa-city w-5 mr-1"></i> O Município</a>
+                            <div class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 ease-in-out">
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Obras</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Veículos</a>
+                                <a href="/municipio/simbolos/simbolos.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Símbolos</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Conselhos</a>
+                                <a href="/municipio/dadosmunicipio/dados-municipio.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Dados do Município</a>
+                            </div>
+                        </li>
+                        <li class="relative group">
+                            <a href="#" class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i class="fas fa-hands-helping w-5 mr-1"></i> Serviços</a>
+                            <div class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 ease-in-out">
+<a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Contra Cheque Online</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Diário Eletrônico</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Nota Fiscal Eletrônica</a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i class="far fa-newspaper w-5 mr-1"></i> Diário Oficial</a></li>
+                        <li class="relative group">
+                            <a href="#" class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i class="fas fa-chart-line w-5 mr-1"></i> Transparência</a>
+                            <div class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 ease-in-out">
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">LRF e Contas Publicas</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Publicações</a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i class="fas fa-info-circle w-5 mr-1"></i> E-Sic</a></li>
+                        <li><a href="/ouvidoria/ouvidoria.html" class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i class="fas fa-comments w-5 mr-1"></i> Ouvidoria</a></li>
+                        <li><a href="#" class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i class="fas fa-search w-5 mr-1"></i> Pesquisa</a></li>
+                    </ul>
+                </nav>
+                <button id="menu-toggle" class="lg:hidden text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="lg:hidden fixed inset-y-0 right-0 w-64 bg-primary shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto">
+            <div class="p-4">
+                <button id="close-menu" class="text-white focus:outline-none mb-4">
+                    <i class="fas fa-times text-2xl"></i>
+                </button>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-white block py-2"><i class="fas fa-home w-5 mr-1"></i> Início</a></li>
+                    <li>
+                        <button class="text-white block py-2 w-full text-left flex items-center justify-between" onclick="toggleSubmenu(this)">
+                            <span><i class="fas fa-building w-5 mr-1"></i> A Prefeitura</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <ul class="pl-4 hidden">
+                            <li><a href="#" class="text-white block py-2">Prefeito e Vice</a></li>
+                            <li><a href="#" class="text-white block py-2">Secretarias</a></li>
+</ul>
+                    </li>
+                    <li>
+                        <button class="text-white block py-2 w-full text-left flex items-center justify-between" onclick="toggleSubmenu(this)">
+                            <span><i class="fas fa-city w-5 mr-1"></i> O Município</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <ul class="pl-4 hidden">
+                            <li><a href="#" class="text-white block py-2">Obras</a></li>
+                            <li><a href="#" class="text-white block py-2">Veículos</a></li>
+                            <li><a href="/municipio/simbolos/simbolos.html" class="text-white block py-2">Símbolos</a></li>
+                            <li><a href="#" class="text-white block py-2">Conselhos</a></li>
+                            <li><a href="/municipio/dadosmunicipio/dados-municipio.html" class="text-white block py-2">Dados do Município</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="text-white block py-2 w-full text-left flex items-center justify-between" onclick="toggleSubmenu(this)">
+                            <span><i class="fas fa-hands-helping w-5 mr-1"></i> Serviços</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <ul class="pl-4 hidden">
+                            <li><a href="#" class="text-white block py-2">Contra Cheque Online</a></li>
+                            <li><a href="#" class="text-white block py-2">Diário Eletrônico</a></li>
+                            <li><a href="#" class="text-white block py-2">Nota Fiscal Eletrônica</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="text-white block py-2"><i class="far fa-newspaper w-5 mr-1"></i> Diário Oficial</a></li>
+                    <li>
+                        <button class="text-white block py-2 w-full text-left flex items-center justify-between" onclick="toggleSubmenu(this)">
+                            <span><i class="fas fa-chart-line w-5 mr-1"></i> Transparência</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <ul class="pl-4 hidden">
+                            <li><a href="#" class="text-white block py-2">LRF e Contas Publicas</a></li>
+                            <li><a href="#" class="text-white block py-2">Publicações</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="text-white block py-2"><i class="fas fa-info-circle w-5 mr-1"></i> E-Sic</a></li>
+                    <li><a href="/ouvidoria/ouvidoria.html" class="text-white block py-2"><i class="fas fa-comments w-5 mr-1"></i> Ouvidoria</a></li>
+                    <li><a href="#" class="text-white block py-2"><i class="fas fa-search w-5 mr-1"></i> Pesquisa</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-24 mb-12">
+        <h1 class="text-4xl font-bold text-center text-gray-900 mb-12">Gestão Municipal 2025-2029</h1>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Prefeita -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="relative">
+                    <img src="/site-da-prefeitura-de-santo-ant-nio-dos-lopes/images/prefeita.jpg" alt="Foto da Prefeita Cibelle Napoleão" class="w-full h-64 object-cover">
+                    <div class="absolute bottom-0 left-0 right-0 bg-primary bg-opacity-80 text-white p-4">
+                        <h2 class="text-2xl font-bold">Cibelle Napoleão</h2>
+<p class="text-lg">Prefeita Municipal</p>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <p class="text-gray-600 mb-4">Gestão comprometida com o progresso e a qualidade de vida dos cidadãos.</p>
+                    <h3 class="text-xl font-semibold mb-2">Principais Objetivos</h3>
+                    <ul class="list-disc pl-5 space-y-1 mb-4">
+                        <li>Modernização da infraestrutura urbana</li>
+                        <li>Ampliação dos programas de saúde preventiva</li>
+                        <li>Investimento em educação tecnológica</li>
+                        <li>Promoção do turismo local</li>
+                    </ul>
+                    <p class="text-sm text-gray-500 mb-4">
+                        <strong>Formação:</strong> Graduada em Gestão Pública, Mestre em Administração Municipal
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <a href="mailto:prefeita.cibelle@prefeitura.gov.br" class="text-primary hover:underline">
+                            <i class="fas fa-envelope mr-2"></i>Email
+                        </a>
+                        <a href="#" class="bg-primary text-white px-4 py-2 rounded-lg transition duration-300 ease-in-out hover:bg-primary/80">
+                            Agenda da Prefeita
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Vice-Prefeita -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="relative">
+                    <img src="/site-da-prefeitura-de-santo-ant-nio-dos-lopes/images/vice-prefeita.jpg" alt="Foto da Vice-Prefeita Maria Lia" class="w-full h-64 object-cover">
+                    <div class="absolute bottom-0 left-0 right-0 bg-primary bg-opacity-80 text-white p-4">
+                        <h2 class="text-2xl font-bold">Maria Lia</h2>
+                        <p class="text-lg">Vice-Prefeita Municipal</p>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <p class="text-gray-600 mb-4">Experiência em gestão pública e profundo conhecimento das necessidades locais.</p>
+                    <h3 class="text-xl font-semibold mb-2">Principais Responsabilidades</h3>
+                    <ul class="list-disc pl-5 space-y-1 mb-4">
+                        <li>Coordenação de projetos sociais</li>
+                        <li>Supervisão de programas de desenvolvimento econômico</li>
+                        <li>Articulação com entidades da sociedade civil</li>
+                        <li>Representação da prefeitura em eventos oficiais</li>
+                    </ul>
+                    <p class="text-sm text-gray-500 mb-4">
+                        <strong>Formação:</strong> Graduada em Administração Pública, Especialista em Gestão de Políticas Sociais
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <a href="mailto:vice.maria.lia@prefeitura.gov.br" class="text-primary hover:underline">
+                            <i class="fas fa-envelope mr-2"></i>Email
+                        </a>
+                        <a href="#" class="bg-primary text-white px-4 py-2 rounded-lg transition duration-300 ease-in-out hover:bg-primary/80">
+                            Agenda da Vice-Prefeita
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white mt-16 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            <div>
+                <img src="/site-da-prefeitura-de-santo-ant-nio-dos-lopes/images/logo.png" alt="Prefeitura Municipal" class="h-10 mb-6">
+<p class="flex items-center mb-2"><i class="fas fa-map-marker-alt mr-2"></i> Rua Principal, 123</p>
+                <p class="flex items-center mb-2"><i class="fas fa-phone mr-2"></i> (00) 1234-5678</p>
+                <p class="flex items-center mb-4"><i class="fas fa-envelope mr-2"></i> contato@prefeitura.gov.br</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="bg-primary hover:bg-primary/80 w-10 h-10 rounded-full flex items-center justify-center transition duration-300 ease-in-out"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="bg-primary hover:bg-primary/80 w-10 h-10 rounded-full flex items-center justify-center transition duration-300 ease-in-out"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="bg-primary hover:bg-primary/80 w-10 h-10 rounded-full flex items-center justify-center transition duration-300 ease-in-out"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-6 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-12 after:h-1 after:bg-primary">Links Úteis</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-primary transition duration-300 ease-in-out">Portal da Transparência</a></li>
+                    <li><a href="#" class="hover:text-primary transition duration-300 ease-in-out">Diário Oficial</a></li>
+                    <li><a href="#" class="hover:text-primary transition duration-300 ease-in-out">Licitações</a></li>
+                    <li><a href="#" class="hover:text-primary transition duration-300 ease-in-out">Concursos</a></li>
+                    <li><a href="#" class="hover:text-primary transition duration-300 ease-in-out">Ouvidoria</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-6 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-12 after:h-1 after:bg-primary">Horário de Atendimento</h3>
+                <p class="mb-2">Segunda a Sexta</p>
+                <p class="mb-2">08:00 às 17:00</p>
+                <p class="mb-4">Exceto feriados</p>
+                <a href="#" class="inline-block bg-primary text-white px-6 py-3 rounded-lg transition duration-300 ease-in-out hover:bg-primary/80">Fale Conosco</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="prefeito.js"></script>
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMenu = document.getElementById('close-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('translate-x-full');
+        });
+
+        closeMenu.addEventListener('click', () => {
+            mobileMenu.classList.add('translate-x-full');
+        });
+
+        // Submenu toggle
+        function toggleSubmenu(button) {
+            const submenu = button.nextElementSibling;
+            submenu.classList.toggle('hidden');
+            const icon = button.querySelector('i.fas.fa-chevron-down');
+            icon.classList.toggle('fa-chevron-up');
+        }
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (event) => {
+            const isClickInsideMenu = mobileMenu.contains(event.target);
+            const isClickOnToggle = menuToggle.contains(event.target);
+            if (!isClickInsideMenu && !isClickOnToggle && !mobileMenu.classList.contains('translate-x-full')) {
+                mobileMenu.classList.add('translate-x-full');
+            }
+        });
+    </script>
+</body>
+</html>
