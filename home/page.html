@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,84 +22,111 @@
         .submenu {
             display: none;
         }
+
         .submenu.show {
             display: block;
         }
+
         @media (min-width: 1024px) {
             .submenu {
                 position: absolute;
                 background-color: white;
                 min-width: 160px;
-                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
                 z-index: 1;
             }
         }
     </style>
 </head>
+
 <body class="font-sans bg-gray-100">
     <header class="bg-primary fixed w-full top-0 z-50 shadow-lg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <div class="flex-shrink-0">
-                    <img src="/site-santo-antonio-dos-lopes/imagens/logo.png" alt="Prefeitura Municipal" class="h-16">
+                    <img src="/site gd/imagens/logo.png" alt="Prefeitura Municipal" class="h-16">
                 </div>
                 <nav class="hidden lg:flex flex-1 justify-center">
                     <ul class="flex space-x-1">
-                        <li><a href="/site-santo-antonio-dos-lopes/home/page.html" class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i class="fas fa-home w-5 mr-1"></i> Início</a></li>
-                        
+                        <li><a href="../home/index.html"
+                                class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i
+                                    class="fas fa-home w-5 mr-1"></i> Início</a></li>
+
                         <li class="relative group">
-                            <button class="submenu-toggle text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12">
+                            <button
+                                class="submenu-toggle text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12">
                                 <i class="fas fa-building w-5 mr-1"></i> A Prefeitura
                                 <i class="fas fa-chevron-down ml-1 transition-transform duration-300"></i>
                             </button>
-                            <div class="submenu absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden">
-                                <a href="/site-santo-antonio-dos-lopes/prefeitura/prefeito/prefeito.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Prefeito e Vice</a>
-                                <a href="/site-santo-antonio-dos-lopes/prefeitura/secretarias/secretarias.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Secretarias</a>
+                            <div
+                                class="submenu absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden">
+                                <a href="/site gd/prefeitura/prefeito/prefeito.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Prefeita
+                                    e Vice</a>
+                                <a href="/site gd/prefeitura/secretarias/secretarias.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Secretarias</a>
                             </div>
                         </li>
-                        
+
                         <li class="relative group">
-                            <button class="submenu-toggle text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12">
+                            <button
+                                class="submenu-toggle text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12">
                                 <i class="fas fa-city w-5 mr-1"></i> O Município
                                 <i class="fas fa-chevron-down ml-1 transition-transform duration-300"></i>
                             </button>
-                            <div class="submenu absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden">
-                                <a href="/site-santo-antonio-dos-lopes/municipio/obras" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Obras</a>
-                                <a href="/site-santo-antonio-dos-lopes/municipio/veiculos" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Veículos</a>
-                                <a href="/site-santo-antonio-dos-lopes/municipio/simbolos/simbolos.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Símbolos</a>
-                                <a href="/site-santo-antonio-dos-lopes/municipio/conselhos" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Conselhos</a>
-                                <a href="/site-santo-antonio-dos-lopes/municipio/dadosmunicipio/dados-municipio.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Dados do Município</a>
+                            <div
+                                class="submenu absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden">
+                                <a href="/site gd/municipio/obras/obras.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Obras</a>
+                                <a href="/site gd/municipio/veiculos/veiculos.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Veículos</a>
+                                <a href="/site gd/municipio/simbolos/simbolos.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Símbolos</a>
+                                <a href="/site gd/municipio/conselhos/conselhos.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Conselhos</a>
+                                <a href="/site gd/municipio/dadosmunicipio/dados-municipio.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Dados
+                                    do Município</a>
                             </div>
                         </li>
-                        
+
                         <li class="relative group">
-                            <button class="submenu-toggle text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12">
+                            <button
+                                class="submenu-toggle text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12">
                                 <i class="fas fa-hands-helping w-5 mr-1"></i> Serviços
                                 <i class="fas fa-chevron-down ml-1 transition-transform duration-300"></i>
                             </button>
-                            <div class="submenu absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden">
-                                <a href="/site-santo-antonio-dos-lopes/servicos/contracheque" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Contra Cheque Online</a>
-                                <a href="/site-santo-antonio-dos-lopes/servicos/diario-eletronico" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Diário Eletrônico</a>
-                                <a href="/site-santo-antonio-dos-lopes/servicos/nota-fiscal" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Nota Fiscal Eletrônica</a>
+                            <div
+                                class="submenu absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden">
+                                <a href="/site-santo-antonio-dos-lopes/servicos/contracheque"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Contra
+                                    Cheque Online</a>
+                                <a href="/site-santo-antonio-dos-lopes/servicos/diario-eletronico"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Diário
+                                    Eletrônico</a>
+                                <a href="/site-santo-antonio-dos-lopes/servicos/nota-fiscal"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Nota
+                                    Fiscal Eletrônica</a>
                             </div>
                         </li>
-                        
-                        <li><a href="/site-santo-antonio-dos-lopes/diario-oficial" class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i class="far fa-newspaper w-5 mr-1"></i> Diário Oficial</a></li>
-                        
-                        <li class="relative group">
-                            <button class="submenu-toggle text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12">
-                                <i class="fas fa-chart-line w-5 mr-1"></i> Transparência
-                                <i class="fas fa-chevron-down ml-1 transition-transform duration-300"></i>
-                            </button>
-                            <div class="submenu absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden">
-                                <a href="/site-santo-antonio-dos-lopes/transparencia/lrf" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">LRF e Contas Publicas</a>
-                                <a href="/site-santo-antonio-dos-lopes/transparencia/publicacoes" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-primary">Publicações</a>
-                            </div>
-                        </li>
-                        
-                        <li><a href="/site-santo-antonio-dos-lopes/e-sic" class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i class="fas fa-info-circle w-5 mr-1"></i> E-Sic</a></li>
-                        <li><a href="/site-santo-antonio-dos-lopes/ouvidoria/ouvidoria.html" class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i class="fas fa-comments w-5 mr-1"></i> Ouvidoria</a></li>
-                        <li><a href="/site-santo-antonio-dos-lopes/pesquisa" class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i class="fas fa-search w-5 mr-1"></i> Pesquisa</a></li>
+
+                        <li><a href="/site gd/diario/diario.html"
+                                class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i
+                                    class="far fa-newspaper w-5 mr-1"></i> Diário Oficial</a></li>
+
+                        <li><a href="/site gd/transparência/transparencia.html"
+                                class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i
+                                    class="fas fa-chart-line w-5 mr-1"></i> Transparência</a></li>
+
+                        <li><a href="/site-santo-antonio-dos-lopes/e-sic"
+                                class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i
+                                    class="fas fa-info-circle w-5 mr-1"></i> E-Sic</a></li>
+                        <li><a href="/site gd/ouvidoria/ouvidoria.html"
+                                class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i
+                                    class="fas fa-comments w-5 mr-1"></i> Ouvidoria</a></li>
+                        <li><a href="/site-santo-antonio-dos-lopes/pesquisa"
+                                class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i
+                                    class="fas fa-search w-5 mr-1"></i> Pesquisa</a></li>
                     </ul>
                 </nav>
                 <button id="menu-toggle" class="lg:hidden text-white focus:outline-none">
@@ -106,66 +134,78 @@
                 </button>
             </div>
         </div>
-        
-        <div id="mobile-menu" class="lg:hidden fixed inset-y-0 right-0 w-64 bg-primary shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto">
+
+        <div id="mobile-menu"
+            class="lg:hidden fixed inset-y-0 right-0 w-64 bg-primary shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto">
             <div class="p-4">
                 <button id="close-menu" class="text-white focus:outline-none mb-4">
                     <i class="fas fa-times text-2xl"></i>
                 </button>
                 <ul class="space-y-2">
-                    <li><a href="/site-santo-antonio-dos-lopes/" class="text-white block py-2"><i class="fas fa-home w-5 mr-1"></i> Início</a></li>
+                    <li><a href="/site-santo-antonio-dos-lopes/" class="text-white block py-2"><i
+                                class="fas fa-home w-5 mr-1"></i> Início</a></li>
                     <li>
-                        <button class="submenu-toggle text-white block py-2 w-full text-left flex items-center justify-between">
+                        <button
+                            class="submenu-toggle text-white block py-2 w-full text-left flex items-center justify-between">
                             <span><i class="fas fa-building w-5 mr-1"></i> A Prefeitura</span>
                             <i class="fas fa-chevron-down transition-transform duration-300"></i>
                         </button>
                         <ul class="submenu pl-4 hidden">
-                            <li><a href="/site-santo-antonio-dos-lopes/prefeitura/prefeito/prefeito.html" class="text-white block py-2">Prefeito e Vice</a></li>
-                            <li><a href="/site-santo-antonio-dos-lopes/prefeitura/secretarias/secretarias.html" class="text-white block py-2">Secretarias</a></li>
+                            <li><a href="/site-santo-antonio-dos-lopes/prefeitura/prefeito/prefeito.html"
+                                    class="text-white block py-2">Prefeita e Vice</a></li>
+                            <li><a href="/site-santo-antonio-dos-lopes/prefeitura/secretarias/secretarias.html"
+                                    class="text-white block py-2">Secretarias</a></li>
                         </ul>
                     </li>
                     <li>
-                        <button class="submenu-toggle text-white block py-2 w-full text-left flex items-center justify-between">
+                        <button
+                            class="submenu-toggle text-white block py-2 w-full text-left flex items-center justify-between">
                             <span><i class="fas fa-city w-5 mr-1"></i> O Município</span>
                             <i class="fas fa-chevron-down transition-transform duration-300"></i>
                         </button>
                         <ul class="submenu pl-4 hidden">
-                            <li><a href="/site-santo-antonio-dos-lopes/municipio/obras" class="text-white block py-2">Obras</a></li>
-                            <li><a href="/site-santo-antonio-dos-lopes/municipio/veiculos" class="text-white block py-2">Veículos</a></li>
-                            <li><a href="/site-santo-antonio-dos-lopes/municipio/simbolos/simbolos.html" class="text-white block py-2">Símbolos</a></li>
-                            <li><a href="/site-santo-antonio-dos-lopes/municipio/conselhos" class="text-white block py-2">Conselhos</a></li>
-                            <li><a href="/site-santo-antonio-dos-lopes/municipio/dadosmunicipio/dados-municipio.html" class="text-white block py-2">Dados do Município</a></li>
+                            <li><a href="/site-santo-antonio-dos-lopes/municipio/obras"
+                                    class="text-white block py-2">Obras</a></li>
+                            <li><a href="/site-santo-antonio-dos-lopes/municipio/veiculos"
+                                    class="text-white block py-2">Veículos</a></li>
+                            <li><a href="/site-santo-antonio-dos-lopes/municipio/simbolos/simbolos.html"
+                                    class="text-white block py-2">Símbolos</a></li>
+                            <li><a href="/site-santo-antonio-dos-lopes/municipio/conselhos"
+                                    class="text-white block py-2">Conselhos</a></li>
+                            <li><a href="/site-santo-antonio-dos-lopes/municipio/dadosmunicipio/dados-municipio.html"
+                                    class="text-white block py-2">Dados do Município</a></li>
                         </ul>
                     </li>
                     <li>
-                        <button class="submenu-toggle text-white block py-2 w-full text-left flex items-center justify-between">
+                        <button
+                            class="submenu-toggle text-white block py-2 w-full text-left flex items-center justify-between">
                             <span><i class="fas fa-hands-helping w-5 mr-1"></i> Serviços</span>
                             <i class="fas fa-chevron-down transition-transform duration-300"></i>
                         </button>
                         <ul class="submenu pl-4 hidden">
-                            <li><a href="/site-santo-antonio-dos-lopes/servicos/contracheque" class="text-white block py-2">Contra Cheque Online</a></li>
-                            <li><a href="/site-santo-antonio-dos-lopes/servicos/diario-eletronico" class="text-white block py-2">Diário Eletrônico</a></li>
-                            <li><a href="/site-santo-antonio-dos-lopes/servicos/nota-fiscal" class="text-white block py-2">Nota Fiscal Eletrônica</a></li>
+                            <li><a href="/site-santo-antonio-dos-lopes/servicos/contracheque"
+                                    class="text-white block py-2">Contra Cheque Online</a></li>
+                            <li><a href="/site-santo-antonio-dos-lopes/servicos/diario-eletronico"
+                                    class="text-white block py-2">Diário Eletrônico</a></li>
+                            <li><a href="/site-santo-antonio-dos-lopes/servicos/nota-fiscal"
+                                    class="text-white block py-2">Nota Fiscal Eletrônica</a></li>
                         </ul>
                     </li>
-                    <li><a href="/site-santo-antonio-dos-lopes/diario-oficial" class="text-white block py-2"><i class="far fa-newspaper w-5 mr-1"></i> Diário Oficial</a></li>
-                    <li>
-                        <button class="submenu-toggle text-white block py-2 w-full text-left flex items-center justify-between">
-                            <span><i class="fas fa-chart-line w-5 mr-1"></i> Transparência</span>
-                            <i class="fas fa-chevron-down transition-transform duration-300"></i>
-                        </button>
-                        <ul class="submenu pl-4 hidden">
-                            <li><a href="/site-santo-antonio-dos-lopes/transparencia/lrf" class="text-white block py-2">LRF e Contas Publicas</a></li>
-                            <li><a href="/site-santo-antonio-dos-lopes/transparencia/publicacoes" class="text-white block py-2">Publicações</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="/site-santo-antonio-dos-lopes/e-sic" class="text-white block py-2"><i class="fas fa-info-circle w-5 mr-1"></i> E-Sic</a></li>
-                    <li><a href="/site-santo-antonio-dos-lopes/ouvidoria/ouvidoria.html" class="text-white block py-2"><i class="fas fa-comments w-5 mr-1"></i> Ouvidoria</a></li>
-                    <li><a href="/site-santo-antonio-dos-lopes/pesquisa" class="text-white block py-2"><i class="fas fa-search w-5 mr-1"></i> Pesquisa</a></li>
+                    <li><a href="/site-santo-antonio-dos-lopes/diario-oficial" class="text-white block py-2"><i
+                                class="far fa-newspaper w-5 mr-1"></i> Diário Oficial</a></li>
+                    <li><a href="/site gd/transparência/transparencia.html" class="text-white block py-2"><i
+                                class="fas fa-chart-line w-5 mr-1"></i> Transparência</a></li>
+                    <li><a href="/site-santo-antonio-dos-lopes/e-sic" class="text-white block py-2"><i
+                                class="fas fa-info-circle w-5 mr-1"></i> E-Sic</a></li>
+                    <li><a href="/site-santo-antonio-dos-lopes/ouvidoria/ouvidoria.html"
+                            class="text-white block py-2"><i class="fas fa-comments w-5 mr-1"></i> Ouvidoria</a></li>
+                    <li><a href="/site-santo-antonio-dos-lopes/pesquisa" class="text-white block py-2"><i
+                                class="fas fa-search w-5 mr-1"></i> Pesquisa</a></li>
                 </ul>
             </div>
         </div>
     </header>
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const menuToggle = document.getElementById('menu-toggle');
@@ -233,9 +273,9 @@
     }
     </style>
     
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-20 mb-12">
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-24 mb-12">
         <!-- Painel de Noticias -->
-        <div class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-lg shadow-lg" id="news-panel">
+        <div class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-lg shadow-lg mb-10" id="news-panel">
             <div class="relative h-96" id="news-container"></div>
             <button id="prev-btn"
                 class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white bg-opacity-50 p-2 rounded-full hover:bg-opacity-75 transition-colors">
@@ -251,30 +291,30 @@
             const newsItems = [
                 {
                     id: 1,
-                    image: '/site-santo-antonio-dos-lopes/imagens/logo.png',
+                    image: '/site%20gd/imagens/trabalhando.png',
                     date: '03 // ago',
-                    title: 'Grande convenção de Cibele Napoleão e Maria Lia em Santo Antônio dos Lopes-Ma.',
+                    title: 'Trabalhando juntos pela melhora, uma nova Gonçalves Dias.',
                     link: '#'
                 },
                 {
                     id: 2,
-                    image: '/site-santo-antonio-dos-lopes/imagens/placeholder.jpg',
+                    image: '/site%20gd/imagens/gdfoto.jpg',
                     date: '30 // jul',
                     title: 'Venha conhecer nossa querida cidade.',
                     link: '#'
                 },
                 {
                     id: 3,
-                    image: '/site-santo-antonio-dos-lopes/imagens/placeholder.jpg',
+                    image: '/site%20gd/imagens/vistagd.png',
                     date: '17 // ago',
-                    title: 'Santo Antônio dos Lopes, quando visto de cima, revela uma paisagem encantadora que une a simplicidade do interior com a beleza natural de uma cidade tranquila.',
+                    title: 'Cidade em constante crescimento, rumo ao topo!',
                     link: '#'
                 },
                 {
                     id: 4,
-                    image: '/site-santo-antonio-dos-lopes/imagens/placeholder.jpg',
+                    image: '/site%20gd/imagens/gdfoto.jpg',
                     date: '18 // jul',
-                    title: 'Grande riqueza de nossa cidade. Complexo parnaiba.',
+                    title: 'Grande riqueza de nossa cidade.',
                     link: '#'
                 }
             ];
@@ -333,19 +373,20 @@
         </script>
 
         <!-- Seção Painel de denúncia -->
-        <section class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-            <div class="bg-white rounded-lg p-4" style="box-shadow: 0 4px 6px rgba(14, 0, 0, 0.2);">
-                <h2 class="text-xl font-semibold text-black mb-2">Painel de Denúncia</h2>
-                <p class="text-sm mb-3">Ajude-nos a identificar os problemas na cidade! O Painel de Denúncia está
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <div class="bg-white rounded-lg p-6" style="box-shadow: 0 4px 6px rgba(14, 0, 0, 0.2);">
+                <h2 class="text-xl font-semibold text-black mb-4">Ouvidoria</h2>
+                <p class="text-sm mb-6">Ajude-nos a identificar os problemas na cidade! O Painel de Denúncia está
                     disponível para você relatar questões como falta de iluminação e outras necessidades. Sua
                     contribuição é essencial</p>
-                <a href="/site-santo-antonio-dos-lopes/denuncia/painel-denuncia.html"
-                    class="bg-pink-600 text-white px-3 py-1.5 text-sm rounded hover:bg-pink-700">Painel de Denúncia</a>
+                <a href="/site gd/ouvidoria/ouvidoria.html"
+                    class="bg-pink-600 text-white px-4 py-2 text-sm rounded hover:bg-pink-700">Painel de Denúncia</a>
             </div>
-            <div class="bg-pink-100 rounded-lg p-4" style="box-shadow: 0 4px 6px rgba(14, 0, 0, 0.2);">
-                <h2 class="text-xl font-semibold text-black-700 mb-2">Transparência</h2>
-                <p class="text-sm mb-3">Acesse os dados e informações sobre a gestão municipal.</p>
-                <a href="/site-santo-antonio-dos-lopes/transparencia" class="bg-pink-600 text-white px-3 py-1.5 text-sm rounded hover:bg-pink-700">Portal da Transparência</a>
+            <div class="bg-white rounded-lg p-6" style="box-shadow: 0 4px 6px rgba(14, 0, 0, 0.2);">
+                <h2 class="text-xl font-semibold text-black-700 mb-4">Portal da Transparência</h2>
+                <p class="text-sm mb-6">Acesse os dados e informações sobre a gestão municipal.</p>
+                <a href="/site gd/transparência/transparencia.html"
+                    class="bg-pink-600 text-white px-4 py-2 text-sm rounded hover:bg-pink-700">Portal da Transparência</a>
             </div>
         </section>
 
@@ -353,19 +394,19 @@
         <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div
                 class="bg-white rounded-2xl shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:-translate-y-2">
-                <img src="/site-santo-antonio-dos-lopes/imagens/placeholder.jpg" alt="Notícias" class="w-full h-64 object-cover">
+                <img src="/site%20gd/imagens/noticias.png" alt="Notícias" class="w-full h-64 object-cover">
                 <div class="p-6">
                     <h2 class="text-2xl font-bold text-gray-800 mb-4">Últimas Notícias</h2>
                     <p class="text-gray-600 mb-6">Fique por dentro das últimas atualizações e acontecimentos importantes
                         da nossa cidade. Informação é cidadania!</p>
-                    <a href="/site-santo-antonio-dos-lopes/noticias"
+                    <a href="/site%20gd/imagens/noticias.jpg"
                         class="inline-block bg-pink-500 text-white px-6 py-3 rounded-lg transition duration-300 ease-in-out hover:bg-pink-400">Ler
                         mais</a>
                 </div>
             </div>
             <div
                 class="bg-white rounded-2xl shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:-translate-y-2">
-                <img src="/site-santo-antonio-dos-lopes/imagens/placeholder.jpg" alt="Serviços" class="w-full h-64 object-cover">
+                <img src="/site%20gd/imagens/servicos.png" alt="Serviços" class="w-full h-64 object-cover">
                 <div class="p-6">
                     <h2 class="text-2xl font-bold text-gray-800 mb-4">Serviços Online</h2>
                     <p class="text-gray-600 mb-6">Acesse nossos serviços digitais de forma rápida e prática. Disponível
@@ -377,7 +418,7 @@
             </div>
             <div
                 class="bg-white rounded-2xl shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:-translate-y-2">
-                <img src="/site-santo-antonio-dos-lopes/imagens/placeholder.jpg" alt="Eventos" class="w-full h-64 object-cover">
+                <img src="/site%20gd/imagens/agenda.png" alt="Eventos" class="w-full h-64 object-cover">
                 <div class="p-6">
                     <h2 class="text-2xl font-bold text-gray-800 mb-4">Agenda de Eventos</h2>
                     <p class="text-gray-600 mb-6">Participe dos eventos e atividades culturais do município. Confira
@@ -388,13 +429,338 @@
                 </div>
             </div>
         </section>
+</main>
 
-    </main>
+    <div class="fixed top-24 right-5 flex flex-col space-y-2">
+        <button class="w-12 h-12 rounded-full bg-pink-500 text-white flex items-center justify-center hover:bg-pink-600 transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </button>
+      
+        <div class="relative">
+          <button onclick="toggleSearch()" class="w-12 h-12 rounded-full bg-pink-500 text-white flex items-center justify-center hover:bg-pink-600 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </button>
+          
+          <div id="searchPopup" class="hidden absolute right-14 top-0 bg-white rounded-lg shadow-lg p-4 w-64">
+            <div class="flex items-center space-x-2">
+              <input type="text" placeholder="Pesquisar..." class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500">
+              <button onclick="toggleSearch()" class="text-gray-500 hover:text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      
+        <button class="w-12 h-12 rounded-full bg-pink-500 text-white flex items-center justify-center hover:bg-pink-600 transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+          </svg>
+        </button>
+      </div>
+      
+      <script>
+      function toggleSearch() {
+        const popup = document.getElementById('searchPopup');
+        popup.classList.toggle('hidden');
+      }
+      </script>
+
+<style>
+    .licitacoes-section {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+    
+    .licitacoes-title {
+        color: #272727;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    .licitacao-card {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+    
+    .licitacao-date {
+        color: #666;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    
+    .licitacao-title {
+        color: #333;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    
+    .licitacao-description {
+        color: #666;
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+    
+    .ver-todos-btn {
+        background-color: #ff2faf;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        cursor: pointer;
+        display: block;
+        font-size: 14px;
+        margin: 20px auto;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        width: fit-content;
+    }
+    
+    .ver-todos-btn:hover {
+        background-color: #dd00ad;
+    }
+    
+    .arrow-buttons {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        margin: 0 -30px;
+    }
+    
+    .arrow {
+        background: none;
+        border: none;
+        color: #ccc;
+        cursor: pointer;
+        font-size: 24px;
+        padding: 10px;
+    }
+    </style>
+    
+    <div class="licitacoes-section">
+        <h2 class="licitacoes-title">AVISO DE LICITAÇÕES</h2>
+        
+        <div class="arrow-buttons">
+            <button class="arrow left-arrow">&#8249;</button>
+            
+            <div class="licitacao-card">
+                <div class="licitacao-date">Data: 04/07/2024 - Aviso de licitação</div>
+                <h3 class="licitacao-title">AVISO DE LICITAÇÃO - PREGÃO ELETRÔNICO : 007/2024 - TIPO: MENOR PREÇO</h3>
+                <p class="licitacao-description">
+                    OBJETO: Contratação de empresa especializada em engenharia elétrica para a execução de serviços operacionais do Parque de Iluminação Pública do Município, incluindo atividades preventivas e corretivas, para atender as necessidades do Município
+                </p>
+            </div>
+    
+            <button class="arrow right-arrow">&#8250;</button>
+        </div>
+    
+        <a href="#" class="ver-todos-btn">VER TODOS OS AVISOS</a>
+    </div>
+
+    <style>
+        .transparency-banner-container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .transparency-banner {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .transparency-banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+            max-height: 400px;
+            object-fit: cover;
+        }
+        
+        .transparency-banner a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+        }
+        </style>
+        
+        <div class="transparency-banner-container">
+            <div class="transparency-banner">
+                <a href="/site gd/transparência/transparencia.html">
+                    <img src="/site gd/imagens/portal.png" alt="Acesse nosso Portal da Transparência">
+                </a>
+            </div>
+        </div>
+
+        <section class="p-8 bg-gray-50">
+            <h2 class="text-3xl font-bold mb-8 text-center">MAIS SERVIÇOS E INFORMAÇÕES</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+              
+              <!-- 1. Nota Fiscal -->
+              <a href="#" class="bg-white rounded-lg shadow-lg p-6 transition-transform hover:scale-105 cursor-pointer">
+                <div class="flex items-center gap-4 mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="#FF1493">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                  </svg>
+                  <h3 class="text-xl font-semibold">Nota Fiscal Eletrônica</h3>
+                </div>
+                <p class="text-gray-600">Nota Fiscal Eletrônica</p>
+              </a>
+          
+              <!-- 2. Estrutura Organizacional -->
+              <a href="#" class="bg-white rounded-lg shadow-lg p-6 transition-transform hover:scale-105 cursor-pointer">
+                <div class="flex items-center gap-4 mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="#FF1493">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                  </svg>
+                  <h3 class="text-xl font-semibold">Estrutura Organizacional</h3>
+                </div>
+                <p class="text-gray-600">Estruturação dos órgãos e seus relacionamentos</p>
+              </a>
+          
+              <!-- 3. Prestação de Contas -->
+              <a href="#" class="bg-white rounded-lg shadow-lg p-6 transition-transform hover:scale-105 cursor-pointer">
+                <div class="flex items-center gap-4 mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="#FF1493">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                  </svg>
+                  <h3 class="text-xl font-semibold">Prestações de Contas</h3>
+                </div>
+                <p class="text-gray-600">Acompanhamento da aprovação de contas</p>
+              </a>
+          
+              <!-- 4. Plano Anual -->
+              <a href="#" class="bg-white rounded-lg shadow-lg p-6 transition-transform hover:scale-105 cursor-pointer">
+                <div class="flex items-center gap-4 mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="#FF1493">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                  </svg>
+                  <h3 class="text-xl font-semibold">Plano Anual de Contratação</h3>
+                </div>
+                <p class="text-gray-600">PLANO ANUAL DE CONTRATAÇÃO - PCA 2024</p>
+              </a>
+          
+              <!-- 5. Execução Orçamentária -->
+              <a href="#" class="bg-white rounded-lg shadow-lg p-6 transition-transform hover:scale-105 cursor-pointer">
+                <div class="flex items-center gap-4 mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="#FF1493">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
+                  </svg>
+                  <h3 class="text-xl font-semibold">Execução Orçamentária e Financeira</h3>
+                </div>
+                <p class="text-gray-600">Evolução das receitas e despesas</p>
+              </a>
+          
+              <!-- 6. Folha de Pagamento -->
+              <a href="#" class="bg-white rounded-lg shadow-lg p-6 transition-transform hover:scale-105 cursor-pointer">
+                <div class="flex items-center gap-4 mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="#FF1493">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                  <h3 class="text-xl font-semibold">Folha de Pagamento</h3>
+                </div>
+                <p class="text-gray-600">Relação de servidores e seus vencimentos</p>
+              </a>
+          
+              <!-- 7. Validação de Alvarás -->
+              <a href="#" class="bg-white rounded-lg shadow-lg p-6 transition-transform hover:scale-105 cursor-pointer">
+                <div class="flex items-center gap-4 mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="#FF1493">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
+                  <h3 class="text-xl font-semibold">Validação de Alvarás, Certidões e NF-e</h3>
+                </div>
+                <p class="text-gray-600">VALIDAÇÃO DE ALVARÁS, CERTIDÕES E NF-e</p>
+              </a>
+          
+              <!-- 8. Licitações -->
+              <a href="#" class="bg-white rounded-lg shadow-lg p-6 transition-transform hover:scale-105 cursor-pointer">
+                <div class="flex items-center gap-4 mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="#FF1493">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                  </svg>
+                  <h3 class="text-xl font-semibold">Licitações</h3>
+                </div>
+                <p class="text-gray-600">Publicação de licitações e seus andamentos</p>
+              </a>
+          
+              <!-- 9. Diário Oficial -->
+              <a href="/site gd/diario/diario.html" class="bg-white rounded-lg shadow-lg p-6 transition-transform hover:scale-105 cursor-pointer">
+                <div class="flex items-center gap-4 mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="#FF1493">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                  </svg>
+                  <h3 class="text-xl font-semibold">Diário Oficial</h3>
+                </div>
+                <p class="text-gray-600">Publicações oficiais dos atos administrativos</p>
+              </a>
+          
+              <!-- 10. Contratos -->
+              <a href="#" class="bg-white rounded-lg shadow-lg p-6 transition-transform hover:scale-105 cursor-pointer">
+                <div class="flex items-center gap-4 mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="#FF1493">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                  </svg>
+                  <h3 class="text-xl font-semibold">Contratos</h3>
+                </div>
+                <p class="text-gray-600">Andamento dos contratos junto aos fornecedores</p>
+              </a>
+          
+              <!-- 11. E-SIC -->
+              <a href="#" class="bg-white rounded-lg shadow-lg p-6 transition-transform hover:scale-105 cursor-pointer">
+                <div class="flex items-center gap-4 mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="#FF1493">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <h3 class="text-xl font-semibold">E-SIC</h3>
+                </div>
+                <p class="text-gray-600">Solicitação de informações de interesse público</p>
+              </a>
+          
+              <!-- 12. Ouvidoria -->
+              <a href="/site gd/ouvidoria/ouvidoria.html" class="bg-white rounded-lg shadow-lg p-6 transition-transform hover:scale-105 cursor-pointer">
+                <div class="flex items-center gap-4 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="#FF1493">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+        </svg>
+        <h3 class="text-xl font-semibold">Ouvidoria</h3>
+      </div>
+      <p class="text-gray-600">Faça suas sugestões, denúncias e reclamações</p>
+    </a>
+  </div>
+</section>
+
+<style>
+  .hover\:scale-105:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .cursor-pointer:hover {
+    box-shadow: 0 4px 14px rgba(255, 20, 147, 0.2);
+  }
+</style>
 
     <footer class="bg-gray-800 text-white mt-16 py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
             <div>
-                <img src="/site-santo-antonio-dos-lopes/imagens/logo.png" alt="Prefeitura Municipal" class="h-14 mb-6">
+                <img src="/site gd/imagens/logo.png" alt="Prefeitura Municipal" class="h-28 mb-6">
                 <p class="flex items-center mb-2"><i class="fas fa-map-marker-alt mr-2"></i> Rua Principal, 123</p>
                 <p class="flex items-center mb-2"><i class="fas fa-phone mr-2"></i> (00) 1234-5678</p>
                 <p class="flex items-center mb-4"><i class="fas fa-envelope mr-2"></i> contato@prefeitura.gov.br</p>

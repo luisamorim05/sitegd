@@ -44,11 +44,11 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <div class="flex-shrink-0">
-                    <img src="/site%20gd/imagens/logo.png" alt="Prefeitura Municipal" class="h-16">
+                    <img src="/site gd/imagens/logo.png" alt="Prefeitura Municipal" class="h-16">
                 </div>
                 <nav class="hidden lg:flex flex-1 justify-center">
                     <ul class="flex space-x-1">
-                        <li><a href="../home/index.html"
+                        <li><a href="/site gd/home/page.html"
                                 class="text-white hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i
                                     class="fas fa-home w-5 mr-1"></i> Início</a></li>
 
@@ -273,89 +273,269 @@
     }
     </style>
 
-    <body class="bg-gradient-to-br from-pink-100 to-purple-100 min-h-screen p-4 sm:p-8"> 
-        <main class="max-w-7xl mx-auto">
-            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-pink-600 text-center mb-8 sm:mb-12 md:mb-16 mt-8 sm:mt-12 md:mt-18 relative z-10 shadow-lg p-12 mx-auto max-w-4xl">
-                Secretarias Municipais
-            </h1>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div
-                    class="bg-white rounded-xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <h3 class="text-2xl text-pink-600 font-semibold mb-4">
-                        <a href="administraçao/administraçao.html" class="hover:underline">Administração</a>
-                    </h3>
-                    <p class="text-gray-700"><span class="font-medium">Responsável:</span> Não Definido</p>
-                    <p class="text-gray-700 mt-2"><span class="font-medium">Contato:</span>
-                        <a href="mailto:admin@prefeitura.gov.br"
-                            class="text-blue-500 hover:underline">admin@prefeitura.gov.br</a>
-                    </p>
-                </div>
-                <div
-                    class="bg-white rounded-xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <h3 class="text-2xl text-pink-600 font-semibold mb-4">
-                        <a href="educaçao/educaçao.html" class="hover:underline">Educação</a>
-                    </h3>
-                    <p class="text-gray-700"><span class="font-medium">Responsável:</span> Não Definido</p>
-                    <p class="text-gray-700 mt-2"><span class="font-medium">Contato:</span>
-                        <a href="mailto:educacao@prefeitura.gov.br"
-                            class="text-blue-500 hover:underline">educacao@prefeitura.gov.br</a>
-                    </p>
-                </div>
-                <div
-                    class="bg-white rounded-xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <h3 class="text-2xl text-pink-600 font-semibold mb-4">
-                        <a href="saude/saude.html" class="hover:underline">Saúde</a>
-                    </h3>
-                    <p class="text-gray-700"><span class="font-medium">Responsável:</span> Não Definido</p>
-                    <p class="text-gray-700 mt-2"><span class="font-medium">Contato:</span>
-                        <a href="mailto:saude@prefeitura.gov.br"
-                            class="text-blue-500 hover:underline">saude@prefeitura.gov.br</a>
-                    </p>
-                </div>
-                <div
-                    class="bg-white rounded-xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <h3 class="text-2xl text-pink-600 font-semibold mb-4">
-                        <a href="obras/obras.html" class="hover:underline">Obras</a>
-                    </h3>
-                    <p class="text-gray-700"><span class="font-medium">Responsável:</span> Não Definido</p>
-                    <p class="text-gray-700 mt-2"><span class="font-medium">Contato:</span>
-                        <a href="mailto:obras@prefeitura.gov.br"
-                            class="text-blue-500 hover:underline">obras@prefeitura.gov.br</a>
-                    </p>
-                </div>
-                <div
-                    class="bg-white rounded-xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <h3 class="text-2xl text-pink-600 font-semibold mb-4">
-                        <a href="assitenciasocial/assistenciasocial.html" class="hover:underline">Assistência Social</a>
-                    </h3>
-                    <p class="text-gray-700"><span class="font-medium">Responsável:</span> Não Definido</p>
-                    <p class="text-gray-700 mt-2"><span class="font-medium">Contato:</span>
-                        <a href="mailto:social@prefeitura.gov.br"
-                            class="text-blue-500 hover:underline">social@prefeitura.gov.br</a>
-                    </p>
-                </div>
-                <div
-                    class="bg-white rounded-xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <h3 class="text-2xl text-pink-600 font-semibold mb-4">
-                        <a href="meioambiente/meioambiente.html" class="hover:underline">Meio Ambiente</a>
-                    </h3>
-                    <p class="text-gray-700"><span class="font-medium">Responsável:</span> Não Definido</p>
-                    <p class="text-gray-700 mt-2"><span class="font-medium">Contato:</span>
-                        <a href="mailto:meioambiente@prefeitura.gov.br"
-                            class="text-blue-500 hover:underline">meioambiente@prefeitura.gov.br</a>
-                    </p>
+
+    <main class="pt-24"> <!-- Adicionado padding-top para compensar o header fixo -->
+        <div class="container mx-auto px-4 py-6">
+            <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Diário Eletrônico do Município</h1>
+            
+            <div class="container mx-auto px-4 py-3">
+                <div class="flex flex-col sm:flex-row items-center justify-between gap-2">
+                    <a href="#" class="flex items-center gap-2">
+                        <img src="../imagens/brasao.jpeg" alt="Logo" class="w-10 h-10 rounded">
+                        <span class="font-bold text-lg">Início / Diário Eletrônico</span>
+                    </a>
                 </div>
             </div>
-        </main>
+
+            <!-- Card de Pesquisa com Visual Melhorado -->
+            <div class="bg-white rounded-xl shadow-md mb-8 transition-all hover:shadow-lg">
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold text-gray-800 mb-6 flex items-center gap-2">
+                        <svg class="w-6 h-6 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                        Pesquisar por publicação
+                    </h2>
+
+                    <form id="searchForm" class="space-y-6">
+                        <!-- Campo de Datas com Layout Melhorado -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="relative">
+                                <label class="block text-gray-700 mb-2">Data Inicial</label>
+                                <input type="date" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition-colors" id="dateFrom">
+                            </div>
+                            <div class="relative">
+                                <label class="block text-gray-700 mb-2">Data Final</label>
+                                <input type="date" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition-colors" id="dateTo">
+                            </div>
+                        </div>
+
+                        <!-- Campo de Pesquisa Melhorado -->
+                        <div class="relative">
+                            <label class="block text-gray-700 mb-2">Termo de Pesquisa</label>
+                            <div class="relative">
+                                <input type="text" class="w-full border border-gray-300 rounded-lg pl-10 pr-4 py-2 focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition-colors" placeholder="Digite sua pesquisa aqui...">
+                                <svg class="w-5 h-5 text-gray-400 absolute left-3 top-1/2 transform -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <!-- Dicas de Pesquisa em Card -->
+                        <div class="bg-pink-50 rounded-lg p-4">
+                            <h3 class="text-lg font-medium text-pink-700 mb-2 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                Dicas de pesquisa:
+                            </h3>
+                            <ul class="list-disc list-inside text-gray-600 space-y-1 ml-2">
+                                <li>Informe uma data ou período válido</li>
+                                <li>Busque utilizar palavras-chave específicas</li>
+                                <li>Quanto mais específica a busca, melhores os resultados</li>
+                            </ul>
+                        </div>
+
+                        <!-- Botão de Pesquisa Melhorado -->
+                        <button type="submit" class="w-full sm:w-auto bg-pink-600 text-white px-8 py-3 rounded-lg hover:bg-pink-700 focus:ring-4 focus:ring-pink-300 transition-all flex items-center justify-center gap-2 font-medium">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                            Pesquisar
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Tabela Responsiva -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <!-- Tabela principal -->
+                <div class="overflow-x-auto">
+                    <table class="min-w-full">
+                        <thead class="bg-pink-50">
+                            <tr>
+                                <th class="px-6 py-4 text-left text-sm font-medium text-pink-700 uppercase tracking-wider">
+                                    Edição
+                                </th>
+                                <th class="px-6 py-4 text-left text-sm font-medium text-pink-700 uppercase tracking-wider">
+                                    Data da Publicação
+                                </th>
+                                <th class="px-6 py-4 text-left text-sm font-medium text-pink-700 uppercase tracking-wider">
+                                    Tipo
+                                </th>
+                                <th class="px-6 py-4 text-left text-sm font-medium text-pink-700 uppercase tracking-wider">
+                                    Descrição
+                                </th>
+                                <th class="px-6 py-4 text-center text-sm font-medium text-pink-700 uppercase tracking-wider">
+                                    Download
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr class="hover:bg-pink-50 transition-colors">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
+                                    209/2024 - DOM20241024
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
+                                    24/10/2024
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
+                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+                                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                        </svg>
+                                        Decreto
+                                    </span>
+                                </td>
+                                <td class="px-6 py-4 text-sm text-gray-700">
+                                    Decreto Municipal nº 123 - Regulamentação de serviços públicos
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap text-center">
+                                    <a href="#" class="text-pink-600 hover:text-pink-800 transition-colors inline-flex items-center justify-center">
+                                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
+                                        </svg>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-pink-50 transition-colors">
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
+                                    208/2024 - DOM20241023
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
+                                    23/10/2024
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
+                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                                        </svg>
+                                        Licitação
+                                    </span>
+                                </td>
+                                <td class="px-6 py-4 text-sm text-gray-700">
+                                    Pregão Eletrônico 45/2024 - Aquisição de materiais de escritório
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap text-center">
+                                    <a href="#" class="text-pink-600 hover:text-pink-800 transition-colors inline-flex items-center justify-center">
+                                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
+                                        </svg>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Paginação -->
+                <div class="bg-white px-4 py-3 flex items-center justify-between border-t border-gray-200 sm:px-6">
+                    <div class="hidden sm:flex-1 sm:flex sm:items-center sm:justify-between">
+                        <div>
+                            <p class="text-sm text-gray-700">
+                                Mostrando
+                                <span class="font-medium">1</span>
+                                até
+                                <span class="font-medium">2</span>
+                                de
+                                <span class="font-medium">12</span>
+                                resultados
+                            </p>
+                        </div>
+                        <div>
+                            <nav class="relative z-0 inline-flex rounded-md shadow-sm -space-x-px" aria-label="Pagination">
+                                <a href="#" class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                                    <span class="sr-only">Anterior</span>
+                                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
+                                    1
+                                </a>
+                                <a href="#" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
+                                    2
+                                </a>
+                                <a href="#" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
+                                    3
+                                </a>
+                                <a href="#" class="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                                    <span class="sr-only">Próxima</span>
+                                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const searchForm = document.getElementById('searchForm');
+                const dateFrom = document.getElementById('dateFrom');
+                const dateTo = document.getElementById('dateTo');
+
+                // Definir data máxima como hoje
+                const today = new Date().toISOString().split('T')[0];
+                dateFrom.max = today;
+                dateTo.max = today;
+
+                // Validação de datas
+                dateFrom.addEventListener('change', function () {
+                    dateTo.min = this.value;
+                });
+
+                dateTo.addEventListener('change', function () {
+                    dateFrom.max = this.value;
+                });
+
+                // Manipulador do formulário
+                searchForm.addEventListener('submit', function (e) {
+                    e.preventDefault();
+
+                    // Adicione aqui a lógica de pesquisa
+                    console.log('Pesquisando...');
+
+                    // Exemplo de feedback visual
+                    const button = this.querySelector('button[type="submit"]');
+                    button.disabled = true;
+                    button.innerHTML = `
+                        <svg class="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                        Pesquisando...
+                    `;
+
+                    // Simular tempo de pesquisa
+                    setTimeout(() => {
+                        button.disabled = false;
+                        button.innerHTML = `
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                            </svg>
+                            Pesquisar
+                        `;
+                    }, 1000);
+                });
+            });
+        </script>
 
         <footer class="bg-gray-800 text-white mt-16 py-12">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
                 <div>
                     <img src="/site-santo-antonio-dos-lopes/imagens/logo.png" alt="Prefeitura Municipal"
-                        class="h-10 mb-6">
-                    <p class="flex items-center mb-2"><i class="fas fa-map-marker-alt mr-2"></i> Rua Principal, 123</p>
-                    <p class="flex items-center mb-2"><i class="fas fa-phone mr-2"></i> (00) 1234-5678</p>
-                    <p class="flex items-center mb-4"><i class="fas fa-envelope mr-2"></i> contato@prefeitura.gov.br</p>
+                        class="h-14 mb-6">
+                    <p class="flex items-center mb-2"><i class="fas fa-map-marker-alt mr-2 flex-shrink-0"></i> Rua
+                        Principal, 123</p>
+                    <p class="flex items-center mb-2"><i class="fas fa-phone mr-2 flex-shrink-0"></i> (00) 1234-5678</p>
+                    <p class="flex items-center mb-4"><i class="fas fa-envelope mr-2 flex-shrink-0"></i>
+                        contato@prefeitura.gov.br</p>
                     <div class="flex space-x-4">
                         <a href="#"
                             class="bg-primary hover:bg-primary/80 w-10 h-10 rounded-full flex items-center justify-center transition duration-300 ease-in-out"><i
@@ -373,17 +553,18 @@
                         class="text-xl font-bold mb-6 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-12 after:h-1 after:bg-primary">
                         Links Úteis</h3>
                     <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-primary transition duration-300 ease-in-out">Portal da
+                        <li><a href="/site-santo-antonio-dos-lopes/transparencia"
+                                class="hover:text-primary transition duration-300 ease-in-out">Portal da
                                 Transparência</a></li>
-                        <li><a href="#" class="hover:text-primary transition duration-300 ease-in-out">Diário
-                                Oficial</a>
+                        <li><a href="/site-santo-antonio-dos-lopes/diario-oficial"
+                                class="hover:text-primary transition duration-300 ease-in-out">Diário Oficial</a>
                         </li>
-                        <li><a href="#" class="hover:text-primary transition duration-300 ease-in-out">Licitações</a>
-                        </li>
-                        <li><a href="#" class="hover:text-primary transition duration-300 ease-in-out">Concursos</a>
-                        </li>
-                        <li><a href="#" class="hover:text-primary transition duration-300 ease-in-out">Ouvidoria</a>
-                        </li>
+                        <li><a href="/site-santo-antonio-dos-lopes/licitacoes"
+                                class="hover:text-primary transition duration-300 ease-in-out">Licitações</a></li>
+                        <li><a href="/site-santo-antonio-dos-lopes/concursos"
+                                class="hover:text-primary transition duration-300 ease-in-out">Concursos</a></li>
+                        <li><a href="/site-santo-antonio-dos-lopes/ouvidoria/ouvidoria.html"
+                                class="hover:text-primary transition duration-300 ease-in-out">Ouvidoria</a></li>
                     </ul>
                 </div>
                 <div>
@@ -393,27 +574,16 @@
                     <p class="mb-2">Segunda a Sexta</p>
                     <p class="mb-2">08:00 às 17:00</p>
                     <p class="mb-4">Exceto feriados</p>
-                    <a href="#"
+                    <a href="/site-santo-antonio-dos-lopes/contato"
                         class="inline-block bg-primary text-white px-6 py-3 rounded-lg transition duration-300 ease-in-out hover:bg-primary/80">Fale
                         Conosco</a>
                 </div>
             </div>
         </footer>
 
-        <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        boxShadow: {
-                            'text': '0 2px 4px rgba(0,0,0,0.1)',
-                        }
-                    }
-                }
-            }
-        </script>
+        <script src="../js/menu.js"></script>
+        <script src="../tailwind/tailwind.config.js"></script>
 
-        <script src="../../js/menu.js"></script>
-        <script src="../../tailwind/tailwind.config.js"></script>
     </body>
 
 </html>
